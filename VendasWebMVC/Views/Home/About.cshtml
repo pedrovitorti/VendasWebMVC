@@ -1,7 +1,10 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "Definindo na própria view.";
+    int soma = 10 + 100;
+    ViewData["ValorSoma"] = soma;
 }
+<h1>@ViewData["Email"]</h1>
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>Páginas razors podem conter código c#, mas usar com moderação.</p> Soma: <p>@ViewData["ValorSoma"]</p>

@@ -17,8 +17,9 @@ namespace VendasWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            //ViewData é um dicionário do c#, está passando valor para a view
+            ViewData["Message"] = "Definindo no controlador e passando para view.";
+            ViewData["Email"] = "pedrovitorti@gmail.com";
             return View();
         }
 

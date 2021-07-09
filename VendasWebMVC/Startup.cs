@@ -56,7 +56,7 @@ namespace VendasWebMVC
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}"); //Define que se digitar /home/Semacao irá exibir view Index
             });
         }
     }
